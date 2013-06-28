@@ -15,7 +15,7 @@ App.module('Common.Mixin', function(Mixin, App, Backbone, Marionette, $, _) {
 
       this.onRender = function() {
          _this.showModal();
-         onRender();
+         onRender.apply(this);
       };
 
       this.showModal = function() {
